@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="./style.css">
+  <title>Challenge fonctions</title>
+</head>
+
+<body>
+  <div id="header">
+    <h1>Challenge 1 : Count Word</h1>
+  </div>
+
+  <div id="container">
+    <form action="/challenge1" method="post">
+      <input type="textarea" id="textarea" name="text" rows="24" cols="80" spellcheck="false">
+      </input>
+      <button id="button" type="submit">Comptage simple</button>
+    </form>
+    <div id="result1">
+      <p><%= resultWordCount %></p>
+
+
+  <div id="header">
+    <h1>Challenge 2 : Prix total</h1>
+  </div>
+
+  <div id="container">
+    <form action="/challenge2" method="post">
+      <input type="hidden" name="typeTax" value="HT"></input>
+      <button id="button" type="submit">Calculer le prix total HT (panier dans code back-end)</button>
+    </form>
+    <form action="/challenge2" method="post">
+      <input type="hidden" name="typeTax" value="TTC"></input>
+      <button id="button" type="submit">Calculer le prix total TTC (panier dans code back-end)</button>
+    </form>
+    <div id="result2">
+      <p><%= resultPrixtotal %></p>
+
+
+
+  <div id="header">
+    <h1>Challenge 3 : Jeu du tirage</h1>
+  </div>
+
+  <div id="container">
+    <form action="/challenge3" method="post">
+      <input type="text" id="textarea" name="nombreChoisi" rows="24" cols="80" spellcheck="false">
+      </input>
+      <button id="button" type="submit">Lancer le tirage</button>
+    </form>
+    <div id="result3">
+      <p><%= resultatTirage %></p>
+
+
+  <script src="./script.js" charset="utf-8"></script>
+</body>
+
+</html>
